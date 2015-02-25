@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="0.457951">
+<testcase classname="Testing Site Search" name="Searching for Cinglevue" time="0.457951">
+<failure message="java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see http://code.google.com/p/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html&#13;&#10;&#9;at com.google.common.base.Preconditions.checkState(Preconditions.java:197)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:105)&#13;&#10;&#9;at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:89)&#13;&#10;&#9;at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:117)&#13;&#10;&#9;at BDTTest.SeleniumTest.setUp(SeleniumTest.java:24)&#13;&#10;&#9;at BDTTest.StepDefs.setUpWebDriver(StepDefs.java:13)&#13;&#10;&#9;at BDTTest.StepDefs.i_navigate_to_the_cinglevue_website(StepDefs.java:27)&#13;&#10;&#9;at ✽.Given I navigate to the cinglevue website(featureFiles/test.feature:7)&#13;&#10;"><![CDATA[Given I navigate to the cinglevue website...................................failed
+When I search for cinglevue in the site search..............................skipped
+Then the search result has more than 10 links...............................skipped
+
+StackTrace:
+java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see http://code.google.com/p/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:197)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:105)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:89)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:117)
+	at BDTTest.SeleniumTest.setUp(SeleniumTest.java:24)
+	at BDTTest.StepDefs.setUpWebDriver(StepDefs.java:13)
+	at BDTTest.StepDefs.i_navigate_to_the_cinglevue_website(StepDefs.java:27)
+	at ✽.Given I navigate to the cinglevue website(featureFiles/test.feature:7)
+]]></failure>
+</testcase>
+</testsuite>
